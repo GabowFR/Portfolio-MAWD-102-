@@ -1,0 +1,208 @@
+ 
+body {
+        justify-items: center;
+        background: linear-gradient(135deg, #9b0a9b, #0aa7e6);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    label {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    input {
+        color: rgb(255, 255, 255);
+        font-size: small;
+    }
+    header {
+        text-align: center;
+        padding: 20px;
+        background: linear-gradient(135deg, #91138a, #920630);
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+    }
+ 
+    svg {
+        justify-items: center;
+    }
+    polygon {
+        justify-items: center;
+    }
+    input,
+    button,
+    select,
+    textarea {
+        font: inherit;
+    }
+ 
+    input {
+        background: #131213;
+        color: var(--tex-1);
+        border: var(--border);
+        border-radius: 16px;
+        padding: 1ex 2ex;
+    }
+    .submit {
+         background: #131213;
+        color: var(--tex-1);
+        border: var(--border);
+        border-radius: 16px;
+        padding: 1ex 2ex;
+    }
+    input:has(.Send) {
+        background: #0a68c0;
+        color: var(--tex-1);
+        border: var(--border);
+        border-radius: 16px;
+        padding: 1ex 2ex;
+    }
+    .video-container {
+        background: linear-gradient(#0853a8, #367ccc);
+        display: grid;
+        gap: 1rem;
+        border: var(--border);
+        border-radius: 16px;
+        padding: 2ex 16ex;
+    }
+    form {
+        background: linear-gradient(#096ecc, #d60707);
+        display: grid;
+        gap: 1rem;
+        border: var(--border);
+        border-radius: 16px;
+        padding: 2ex 16ex;
+       
+    }
+    * {
+        min-width: 0;
+    }
+    label {
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .form-group {
+        display: grid;
+        gap: 1cap;
+    }
+    .skills h2{
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        color: #000000;
+        font-size: 16px;
+        font-size: x-large;
+        font: bold;
+    }
+    .progress-bar {
+        background: #1280c0;
+        width: 600px;
+        height: 10px;
+        border-radius: 5px;
+    }
+   .progress-bar div {
+     height: 10px;
+     border-radius: 5px;
+     width: 0%;
+   }
+   .progress-bar div span {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: linear-gradient(#1c79c5, x#113ebb);
+    float: right;
+    margin-top: -10px;
+    margin-right: -15px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.html {
+   
+    background: linear-gradient(#08c0d8, #052b94);
+    animation: html 1s linear forwards;
+}
+.css {
+   
+    background: linear-gradient(#5d85f1, #f110a6);
+    animation: css 1s linear forwards;
+}
+.JavaScript {
+   
+    background: linear-gradient(#e215d1, #3f0aa0);
+    animation: JavaScript 1s linear forwards;
+}
+.html span {
+    border: 1px solid #111111;
+}
+.css span {
+    border: 1px solid #000000;
+}
+.JavaScript span {
+    border: 1px solid #000000;
+}
+@keyframes html {
+    100%{
+        width: 30%;
+    }
+}
+@keyframes css {
+    100%{
+        width: 10%;
+    }
+}
+@keyframes JavaScript {
+    100%{
+        width: 0%;
+    }
+}
+.text {
+    font-weight: 400;
+     letter-spacing: 1px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        color: #000000;
+        font-size: 16px;
+}
+.h2 {
+    font-weight: 400;
+     letter-spacing: 1px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        color: #000000;
+        font-size: 16px;
+}
+    textarea {
+        background: #5a069e;
+        color: var(--tex-1);
+        border: var(--border);
+        border-radius: 16px;
+        padding: 1ex 2ex;
+    }
+    button {
+        background: #7904a7;
+        color: var(--tex-1);
+        border: var(--border);
+        border-radius: 16px;
+        padding: 1ex 2ex;
+    }
+    button:hover,
+    input:hover,
+    textarea:hover,
+    select:hover {
+        background: #ac097b;
+        cursor: pointer;
+    }
+    .skills {
+        margin-bottom: 40px;
+        color: #111111;
+        font-size: xx-small;
+    }
+ 
+    .container {
+        max-width: 800px;
+        margin: auto;
+        color: #1b19bd;
+    }
+ 
