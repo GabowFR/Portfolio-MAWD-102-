@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rainver Mejillano | Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #f87171; /* pam pa pula */
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #f87171;
+      border-bottom: 2px solid #f87171;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 80px 20px;
+      text-align: left;
+    }
+    .hero img {
+      max-width: 300px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .hero-content {
+      max-width: 500px;
+      margin-left: 40px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #f87171;
+    }
+
+    .hero p.role {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: #f87171;
+      font-weight: bold;
+    }
+
+    .hero p.desc {
+      margin-bottom: 20px;
+      color: #ccc;
+    }
+
+    .socials {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .socials a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #f87171;
+      border-radius: 50%;
+      color: #f87171;
+      text-align: center;
+      line-height: 40px;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      background: #f87171;
+      color: #000;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 25px;
+      border: 2px solid #f87171;
+      color: #f87171;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #f87171;
+      color: #000;
+    }
+
+ 
+   /* contact */
+   #contact {
+     padding: 50px 20px;
+     background: #f4f4f4;
+     text-align: center;
+   }
+
+#contact h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+#contact form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+   #contact input,
+   #contact textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact button {
+  padding: 10px;
+  font-size: 1rem;
+  background: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#contact button:hover {
+  background: #005fa3;
+}
+    /* Sections */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #f87171;
+    }
+
+
+    footer {
+      text-align: center;
+      background: #111;
+      color: #fff;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Rainver</div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero" id="home">
+    <img src="c:\Users\Rainver\Downloads\rainver.jpg" alt="Rainver Profile" />
+    <div class="hero-content">
+      <h1>Hi, It's <span>Rainver</span></h1>
+      <p class="role">My original Portfolio</p>
+      <p class="desc">
+       As you can see there are still no explanation about me but I will do my best to make it as soon as possible.
+
+      </p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <a href="#contact" class="cta-button">Click here to contact me</a>
+    </div>
+  </section>
+  <section id="services">
+    <h2>Services</h2>
+    <p style="text-align:center;"> i can teach you some basic HTMl that i learned so far</p>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <p style="text-align:center;">Basic css, HTML [I always watch tutorials]</p>
+  </section>
+  <section id="education">
+    <h2>Education</h2>
+    <p style="text-align:center;">STI College, G11 MAWD student</p>
+  </section>
+  <section id="experience">
+    <h2>Experience</h2>
+    <p style="text-align:center;">3 months of experience in HTML.</p>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section> 
+  <footer>
+    <p>&copy; 2025 Rainver Mejillano | Portfolio</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you for reaching out! I'll get back to you soon.");
+    });
+
+    // Navigation
+    const navLinks = document.querySelectorAll("nav a");
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>
