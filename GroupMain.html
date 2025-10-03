@@ -1,24 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link src="stylesheets" href="Outer.css"> <!--EXTERNAL CSS-->
-  <title>PORTFOLIO ||</title>
-<!--INTERNAL CSS-->
+   <!--
+~~~Legend: P = pending, X= incomplete, and '/' = complete~~~
+• One inline CSS example (ex: highlight a word or phrase). /
+• One internal CSS example (<style> in <head>). /
+• One external CSS example (.css file linked to HTML). /
+• At least 3 different font families. /
+• At least 3 font properties (size, style, weight, variant). /
+• At least 2 color methods (color name, hex, or RGB). /
+• Examples of text alignment (left, right, center, justify). /
+• At least one text-decoration and one text-transform. /
+• At least one text-shadow effect. /
+• Use of ID and class selectors. /
+ -->
+  
+  
+  
+  <title>GroupDaven||Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="Outer.css">
 <style>
-header{
-  background: linear-gradient(blue, cornflowerblue);
+h2 {
+  font-family:Georgia, Times, 'Times New Roman', serif;
+  color: aqua;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-shadow: 5px 1px 0 rgb(48, 36, 94);
+}
+.container p,  .container2 p{
+color: white;  
+font-family:'Arial Narrow Bold', sans-serif;
+font-style: oblique;
 }
 
 
-</style>
-</head>
+.container, .container2 {
+box-sizing: border-box;
+display: flex;
+flex-wrap: wrap; 
+gap: var(--gap);
+}
+.card {
+ flex: 1 1 calc(33.333% - var(--gap));
+ min-width: 300px;
+}
+
+  </style>
+  </head>
 <body>
-  <header align="center">
-<h1><a href="https://elms.sti.edu/" >Group Daven HTML</a></h1>
-<h3>Computer Programming 2</h3>
-  </header>
-  
+    <div class="container">
+        <div class="card">
+            <h2>Name 1</h2>
+            <p>About Me</p>
+            <p>pogi ni josh</p>
+            <p>Skills:</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <p>Quote: " "</p>
+        </div>
+        <div class="card">
+            <h2>Name 2</h2>
+            <p>About Me</p>
+            <p>ang pogi ni josh</p>
+            <p>Skills:</p>
+            <ul>
+                <li>Graphic Design</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+            </ul>
+            <p>Quote: " "</p>
+        </div>
+        <div class="card">
+            <h2>Name 3</h2>
+            <p>About Me</p>
+            <p>sobrang pogi si josh</p>
+            <p>Skills:</p>
+            <ul>
+                <li>Lagay ka Skills diyan like java</li>
+                <li>Pogi si josh</li>
+                <li>Pogi si josh</li>
+            </ul>
+            <p>Quote: " "</p>
+        </div>
+        <div class="container2">
+          <div class="card">
+            <h2>Name 4</h2>
+            <p>About Me</p>
+            <p>Galing ni josh</p>
+            <p>Skills:</p>
+            <ul>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <p>Quote: " "</p>
+        </div>
+        <div class="card">
+            <h2>Name 5</h2>
+            <p>About Me</p>
+            <p> pogi talaga ni josh</p>
+            <p>Skills:</p>
+            <ul>
+                <li>HTML</li>
+                <li>pogi ni josh</li>
+                <li>pogi ni josh</li>
+            </ul>
+            <p>Quote: " "</p>
+        </div>
+        <div class="card">
+            <h2>Name 6</h2>
+            <p>About Me</p>
+            <p>idol ko si josh</p>
+            <p>Skills:</p>
+            <ul>
+<li>Java</li>
+<li>Idol ko si Josh</li>
+<li>Idol ko si Josh</li>
+</ul>
+<p>Quote: " "</p>
+</div>
+</div>
+</div>
+</div>
+<footer id="foot"><h3 style="border-left: 2px; background-color: aqua; color:white;">
+  Group Daven</h3>
+
+</footer>
 </body>
 </html>
