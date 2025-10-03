@@ -1,0 +1,48 @@
+:root {
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa6b2;
+  --accent:#60a5fa;
+  --glass: rgba(255,255,255,0.03);
+  --radius:14px;
+  --gap:18px;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#071027 0%, #071b2a 100%);
+  color:#e6eef6;
+  padding:28px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  gap:var(--gap);
+}
+.container{width:100%;max-width:1100px;}
+header{margin-bottom:18px;}
+h1{font-size:20px;margin:0}
+.grid{display:grid;grid-template-columns:1fr 480px;gap:18px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:var(--radius);padding:18px;
+  box-shadow:0 6px 24px rgba(2,6,23,0.6);
+  border:1px solid rgba(255,255,255,0.03)}
+.skills ul{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-direction:column;gap:8px}
+.skills li{background:var(--glass);padding:8px 10px;border-radius:10px;width:max-content}
+.progress-list{display:flex;flex-direction:column;gap:12px}
+.progress-row{display:flex;align-items:center;gap:12px}
+.progress-label{width:88px;font-size:14px;color:var(--muted)}
+.bar{flex:1;background:rgba(255,255,255,0.05);height:14px;border-radius:999px;position:relative;overflow:hidden}
+.bar>.fill{position:absolute;left:0;top:0;bottom:0;border-radius:999px}
+.fill.html{width:35%;background:linear-gradient(90deg,#60a5fa,#3b82f6)}
+.fill.css{width:35%;background:linear-gradient(90deg,#7dd3fc,#0ea5e9)}
+.fill.java{width:35%;background:linear-gradient(90deg,#fca5a5,#fb7185)}
+.value{width:66px;text-align:right;font-size:13px;color:var(--muted)}
+.section-title{font-size:16px;margin:0 0 8px}
+table{width:100%;border-collapse:collapse;margin-top:8px}
+th,td{padding:10px;text-align:center;border:1px solid rgba(255,255,255,0.1)}
+th{background:#1e293b;color:#e6eef6}
+td{background:#0f1724;color:#cbd5e1}
+tr:nth-child(even) td{background:#162033}
+@media(max-width:880px){.grid{grid-template-columns:1fr}}
