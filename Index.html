@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ralph cj B. Paulino - About Me</title>
+  <style>
+    /* Objective a: Changes in font face */
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: #add8e6;/* light blue */
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    /* Container to center content */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: lightblue;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Objective c: Heading size and color */
+    h1 {
+      font-family: 'Times New Roman', Times, serif;
+      color: #2c3e50;
+      text-align: center;
+      font-size: 2.5em;
+      border-bottom: 3px double #3498db;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-family: Calibri, 'Trebuchet MS', sans-serif;
+      color: #e74c3c;
+      font-size: 1.8em;
+      text-decoration: underline; /* Objective b: Underline */
+      margin-top: 30px;
+    }
+
+    /* Objective d: Paragraph alignment */
+    p {
+      text-align: justify;
+      margin: 15px 0;
+      font-size: 1.1em;
+    }
+
+    /* Objective b: Font style for skills */
+    strong {
+      font-style: italic;
+      color: #9b59b6;
+    }
+
+    /* Style for the skills section */
+    .skills {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #3498db;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>About Me</h1>
+    
+    <p>Hi my name is <strong>Ralph cj B. Paulino</strong>. I am 16 years old and I'm from Angono.</p>
+    
+    <p>My hobbies are playing online games, billiards, and basketball.</p>
+
+    <h2>My Skills</h2>
+    
+    <div class="skills">
+      <p><strong>Basketball</strong> ► <strong>Billiards</strong> ►</p>
+    </div>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Schedule</title>
+  <style>
+    /* Objective a: Changes in font face */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fafafa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Container for centering */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Main heading styling */
+    h1 {
+      font-family: 'Times New Roman', Times, serif;
+      color: #2c3e50;
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 30px;
+    }
+
+    /* Form styling */
+    form {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border: 2px dashed #3498db; /* Objective e: Dashed border */
+      border-radius: 10px;
+    }
+
+    label {
+      margin-right: 8px;
+      font-weight: bold; /* Objective b: Bold labels */
+    }
+
+    input {
+      margin: 5px;
+      padding: 8px;
+      border: 1px solid #bdc3c7;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #2ecc71;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 8px 20px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #27ae60;
+    }
+
+    /* Link styling */
+    a {
+      display: block;
+      max-width: 900px;
+      margin: 20px auto;
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.1em;
+      padding: 10px;
+    }
+
+    a:hover {
+      color: #e74c3c;
+      text-decoration: underline; /* Objective b: Underline on hover */
+    }
+
+    /* Objective e: Borders and color for tables */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border: 2px solid #34495e; /* Outer table border */
+    }
+
+    caption {
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin: 12px 0;
+      color: #2c3e50;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    th, td {
+      border: 1px solid #7f8c8d;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background: #3498db;
+      color: white;
+      font-family: Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .time {
+      text-align: left;
+      width: 140px;
+      white-space: nowrap;
+      background: #ffeaa7;
+      font-weight: bold; /* Objective b: Bold time labels */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Class Schedule</h1>
+
+    <!-- Form Section -->
+    <form>
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname"><br>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname"><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <!-- Link Section -->
+    <a href="https://elms.sti.edu" target="_blank">Go to eLMS</a>
+
+    <!-- Schedule Table -->
+    <table>
+      <caption>My Weekly Class Schedule</caption>
+      <thead>
+        <tr>
+          <th class="time">Time</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="time">07:00 – 08:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>P.E. 1<br>Activity Area (Gym)</td>
+        </tr>
+        <tr>
+          <td class="time">08:00 – 08:30</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">08:30 – 09:30</td>
+          <td>Web Prog 1<br>206C / 309C</td>
+          <td>Web Prog 1<br>206C / 309C</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">09:30 – 10:30</td>
+          <td></td>
+          <td></td>
+          <td>Media & Info Literacy<br>202C / 309C</td>
+          <td>Media & Info Literacy<br>202C / 309C</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">10:30 – 11:30</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>21st Century Literature<br>212C</td>
+        </tr>
+        <tr>
+          <td class="time">11:30 – 12:30</td>
+          <td>Web Prog 2<br>212C / 309C</td>
+          <td>Web Prog 2<br>212C / 309C</td>
+          <td>Oral Communication<br>212C</td>
+          <td>Oral Communication<br>212C</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">12:30 – 01:30</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">01:30 – 02:30</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">02:30 – 03:30</td>
+          <td></td>
+          <td rowspan="3">Intro to Philosophy<br>204C</td>
+          <td></td>
+          <td></td>
+          <td>Homeroom<br>207C</td>
+        </tr>
+        <tr>
+          <td class="time">03:30 – 04:30</td>
+          <td></td>
+          <td rowspan="3">Gen Math<br>207C</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">04:30 – 05:30</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">05:30 – 06:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">06:00 – 07:00</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
