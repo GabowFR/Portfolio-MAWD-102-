@@ -1,23 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="Outer.css"> <!--External CSS-->
-    <title>Portfolio|| Main</title>
-<!--Embedded/Internal CSS-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Vlogs | Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff0606, #2661b2); /* iba ibahin mo */
+      color: #471191;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(100deg, #b6271a, #4661b2);
+      border-bottom: 1px solid #743228;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      margin: 0;
+      font-weight: 600;
+      color: #262626;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .vlog-card {
+      background: #760542;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      border: 1px solid #1d50c6;
+      transition: transform 0.2s ease;
+    }
+
+    .vlog-card:hover {
+      transform: scale(1.01);
+    }
+
+    /* header ko */
+    .vlog-header {
+      display: flex;
+      align-items: center;
+      padding: 12px 15px;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+    }
+
+    .profile-pic {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #bbb;
+      margin-right: 10px;
+    }
+
+    .username {
+      font-weight: 600;
+      font-size: 0.95em;
+      color: #262626;
+    }
+
+    /* Video like post content */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .content {
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    .content strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #333;
+    }
+
+    .audio-player {
+      width: 100%;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      font-size: 0.85em;
+      color: #777;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-<!--Title-->
-<header>
-</header>
-<!--Images-->
-<div><img src="https://drive.google.com/file/d/1ACJrW8sz09Iue2oEY_n7L_7j72gnnTTy/preview" 
-width="640" height="480"></div>
-<div><img src=""></div>
-<div><img src=""></div>
-<div><img src=""></div>
-<div><img src=""></div>
 
-</body>
-</html>
+  <header>
+    <h1> Group Daven </h1>
+  </header>
+
+  <div class="container">
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Daven Dharyl N. Kilat</span>
+      </div>
+      <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1yIdflumxLWlVVpe76TfS4EjVx5rfGjmr/preview" width="640" height="480" allow="autoplay" allowfullscreen></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="Aya - Earl Agustin (Official Lyric Video).mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Josh Drei Z Cruz</span>
+      </div>
+      <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/125B9Qw1OjRBU3HZXcMR32dLwk0SSt-_M/preview" width="640" 
+  height="480" allow="autoplay"></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="Sugarfree - Burnout (Official Lyric Video) [X2ltjS7bkns].mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Ralph Cj B. Paulino</span>
+      </div>
+      <div class="video-container">
+         <iframe src="https://drive.google.com/file/d/13zIdBM57dTzGFpr57WcgialNkfLL2hJi/preview" width="640" 
+  height="480" allow="autoplay"></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="Orange & Lemons - Heaven Knows (This Angel Has Flown) (Official Lyric Video).mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Peter Gabrielle Tapit Rosauro</span>
+      </div>
+      <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1H_YUdwa3Ut_rO-O_E--wFj0D2NUn_9es/preview" width="400" height="400" allow="autoplay"></iframe>
+
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="Urbandub - Soul Searching (Official Audio).mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Rainver Mejilano</span>
+      </div>
+      <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1GV5dOQwC5_oFFmQPtjZ9Ts2Ec1Uy5-iE/preview" width="640" height="480" allow="autoplay"></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="aespa 'Hot Air Balloon' (Official Audio).mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <div class="vlog-card">
+      <div class="vlog-header">
+        <div class="profile-pic"></div>
+        <span class="username">Marcus fuentes</span>
+      </div>
+      <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1YQnA4FRR2PSwC0ac1ZBmJr60CspPfXdZ/preview" width="640" height="480" allow="autoplay" ></iframe>
+      </div>
+      <div class="content">
+        <strong>Favorite Song:</strong>
+        <audio class="audio-player" controls>
+          <source src="Drake - Shut it down (Lyrics) ft. The Dream you would shut it down down down [Tiktok Song].mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Our Vlogs. All rights reserved.
+  </footer>
